@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="/stylesheets/style-formulario.css">
+</head>
+
+<body>
+    <header>
+        <h1>CENTRO MEDICO AIKA</h1>
+    </header>
+    <main>
+        <form action="./agregar" method="post">
+            <h2>CITA MEDICA</h2>
+            <label for="cedula">Número de Cédula:<span> *</span></label>
+            <input type="text" id="cedula" name="cedula" required><br>
+            <label for="fecha">Fecha:<span> *</span></label>
+            <input type="date" id="fecha" name="fecha" required><br>
+            <label for="especialidad">Especialidad requerida:<span> *</span></label>
+            <select id="especialidad" name="especialidad" required>
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Terapia fisica y motora">Medicina
+                    general</option>
+                    <option value="Terapia farmacologica">Medicina
+                    interna</option>
+                    <option value="Terapia psicologica">Medicina
+                    preventiva</option>
+                    <option value="Terapia Dermatologíca">Dermatología
+                    </option>
+                   <option value="Rehabilitacion cardiaca">Cardiologia</option>
+                    <option value="Social">Pediatria</option>
+                    <option value="Motora">Cirugía </option>
+                    <option value="Psicologia">Psicologia</option>
+                    <option value="Psiquiatria">Psiquiatria</option>
+                    <option value="nutricion y dietetica">nutricion
+                     y dietetica</option>
+                    <option value="Rehabilitacion Odontología ">Odontología
+                    </option>
+                    <option value="Farmacología">Farmacología
+                    <option 
+                    value="Bioenergetica">Bioenergetica</option>  
+            </select><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <a class="volver" href="/cita">Volver</a>
+    </main>
+</body>
+
+</html>

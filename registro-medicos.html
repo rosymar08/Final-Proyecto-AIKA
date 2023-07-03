@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="/stylesheets/style-formulario.css">
+</head>
+
+<body>
+    <header>
+        <h1>CENTRO MEDICO IKAL</h1>
+    </header>
+    <main>
+        <form action="./guardar-medico"method="post">
+            <h2>REGISTRO DE MEDICOS </h2>
+            <label for="cedula">CedulaMedico:<span> *</span></label>
+            <input type="text" id="cedula" name="cedula" required><br>
+            <label for="nombre">Nombre:<span> *</span></label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellido">Apellido:<span> *</span></label>
+            <input type="text" id="apellido" name="apellido" required><br>
+            <label for="consultorio">Número de consultorio:<span> *</span></label>
+            <input type="number" id="consultorio" name="consultorio" required><br>
+            <label for="telefono">Telefono:<span> *</span></label>
+            <input type="tel" id="telefono" name="telefono" required><br>
+            <label for="correo">Correo de contacto:<span> *</span></label>
+            <input type="email" id="correo" name="correo" required><br>
+            <label for="especialidad">Especialidad :<span> *</span></label>
+            <select id="especialidad" name="especialidad">
+                <option value="">Seleccione especialidad </option>
+                <option value="Medicina general">Medicina
+                general</option>
+                <option value="Medicina interna">Medicina
+                interna</option>
+                <option value="Medicina preventiva">Medicina
+                preventiva</option>
+                <option value="Dermatología">Dermatología
+                </option>
+               <option value="Cardiologia">Cardiologia</option>
+                <option value="Pediatria">Pediatria</option>
+                <option value="Cirugía ">Cirugía </option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Psiquiatria">Psiquiatria</option>
+                <option value="nutricion y dietetica">nutricion
+                 y dietetica</option>
+                <option value="Odontología ">Odontología
+                </option>
+                <option value="Farmacología">Farmacología
+                <option 
+                value="Bioenergetica">Bioenergetica</option>
+                </option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+        <a class="volver" href="/medicos">Volver</a>
+    </main>
+</body>
+</html>

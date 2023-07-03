@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://thumbs.dreamstime.com/b/doctor-hand-medical-background-health-care-medical-services-concept-world-global-form-ar-interface-doctor-124277040.jpg);
+    margin: 0;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #c5bcbc;
+    text-align: center;
+    background-color: #126525;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #111212;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #111010;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #45a049;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  input {
+    border: 0;
+  }
+  
+  img{
+    width: 10px;
+  }
+  
+  a, input[type="submit"] {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #4caf50;
+    border: #4cacaf;
+    font-size: medium;
+    border-radius: 4px;
+  }
+  
+  a:hover, input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .volver, .editar{
+    background-color: #4cacaf;
+  }
+  
+  .eliminar {
+    background-color: #ff0000;
+  }
+  
+  .volver,.editar:hover {
+    background-color: #cb1256;
+  }
+  
+  .eliminar:hover {
+    background-color: #9a0000;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
+  .opciones-tabla{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .opciones-tabla a{
+    width: 150px;
+      text-align: center;
+      margin: 10px;
+  }
+  
+  p {
+    color: #0b0a0a;
+  }
+  
+  

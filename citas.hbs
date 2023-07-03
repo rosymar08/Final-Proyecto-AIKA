@@ -1,0 +1,31 @@
+<table border="solid">
+    <h2>NUEVAS CITAS</h2>
+    <thead>
+        <tr>
+            <th>SOLICITA TU CITA A TIEMPO</th>
+            <th>PARA SOLICITAR TU CITA TEN EN CUENTA LOS SIGIENTES DATOS</th>
+            <br>
+            <th>Fecha </th>
+            <br>
+            <th>Cedula Paciente</th>
+            <br>
+            <th>Especialidad Requerida</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       {{#each citas}}
+       <tr>
+        <td>{{formatoFecha fecha}}</td>
+        <td>{{nombre}}</td>
+        <td>{{nombres}}</td>
+        <td>{{consultorio}}</td>
+        <td><a class="eliminar" href="citas/eliminar/{{id_paciente}}">Eliminar</a></td>
+       </tr>
+       {{/each}}
+    </tbody>
+</table>
+<div class="opciones-tabla">
+    <a class="volver" href="/">Volver</a>
+    <a href="/citas/agregar">Nueva cita</a>
+</div>

@@ -1,0 +1,29 @@
+<h1>CENTRO MEDICO AIKA</h1>
+<h2>LISTADO DE CITAS MEDICAS</h2>
+<table>
+<thead>
+    <tr>
+        <th>Nombre </th>
+        <th>Cedula </th>
+        <th>Nombre medico</th>
+        <th>Consultorio</th>
+        <th>Fecha</th>
+        <th>Opciones</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each cita}}
+    <tr>
+        <td>{{nombre}}</td>
+        <td>{{id_paciente}}</td>
+        <td>{{nombres}} {{apellidos}}</td>
+        <td>{{consultorio}}</td>
+        <td>{{formatoFecha fecha}}</td>
+        <td><a href="/cita/eliminar/{{id}}">Eliminar</a></td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
+<div class="opciones-tabla">
+    <a class="volver" href="/">Volver</a>
+</div>
